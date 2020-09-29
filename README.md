@@ -59,8 +59,11 @@ the log will print the optimal threshold in dev set, and you can use this optima
 ## 7. Citation
 
 ```
-@inproceedings{
-    to be completed..
+@inproceedings{zeng-EMNLP-2020-GAIN,
+ author = {Shuang, Zeng and Runxin, Xu and Baobao, Chang and Lei, Li},
+ booktitle = {Proc. of EMNLP},
+ title = {Double Graph Based Reasoning for Document-level Relation Extraction},
+ year = {2020}
 }
 ```
 
