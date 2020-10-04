@@ -10,6 +10,7 @@ if not os.path.exists(prepro_dir):
     os.mkdir(prepro_dir)
 else:
     shutil.rmtree(prepro_dir)
+    os.mkdir(prepro_dir)
 
 rel2id = json.load(open(os.path.join(data_dir, 'rel2id.json'), "r"))
 id2rel = {v: k for k, v in rel2id.items()}
