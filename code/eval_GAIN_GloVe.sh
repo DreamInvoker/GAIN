@@ -11,8 +11,12 @@ input_theta=${2--1}
 dataset=test
 
 nohup python3 -u test.py \
+  --train_set ../data/train_annotated.json \
+  --train_set_save ../data/prepro_data/train_GloVe.pkl \
+  --dev_set ../data/dev.json \
+  --dev_set_save ../data/prepro_data/dev_GloVe.pkl \
   --test_set ../data/${dataset}.json \
-  --test_set_save ../data/prepro_data/${dataset}.pkl \
+  --test_set_save ../data/prepro_data/${dataset}_GloVe.pkl \
   --use_model bilstm \
   --model_name ${model_name} \
   --pretrain_model checkpoint/GAIN_GloVe_best.pt \

@@ -1,15 +1,12 @@
 import argparse
 import json
 import os
-import shutil
+
 import numpy as np
 
 data_dir = '../data/'
 prepro_dir = os.path.join(data_dir, 'prepro_data/')
 if not os.path.exists(prepro_dir):
-    os.mkdir(prepro_dir)
-else:
-    shutil.rmtree(prepro_dir)
     os.mkdir(prepro_dir)
 
 rel2id = json.load(open(os.path.join(data_dir, 'rel2id.json'), "r"))

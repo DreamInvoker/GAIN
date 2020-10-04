@@ -15,6 +15,12 @@ negativa_alpha=4
 weight_decay=0.0001
 
 nohup python3 -u train.py \
+  --train_set ../data/train_annotated.json \
+  --train_set_save ../data/prepro_data/train_GloVe.pkl \
+  --dev_set ../data/dev.json \
+  --dev_set_save ../data/prepro_data/dev_GloVe.pkl \
+  --test_set ../data/test.json \
+  --test_set_save ../data/prepro_data/test_GloVe.pkl \
   --use_model bilstm \
   --model_name ${model_name} \
   --lr ${lr} \
