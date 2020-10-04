@@ -10,7 +10,7 @@ PyTorch implementation for EMNLP 2020 paper: [Double Graph Based Reasoning for D
 ![results](pictures/results.png)
 ## 0. Package Description
 ```
-GLRE/
+GAIN/
 ├─ code/
     ├── checkpoint/: save model checkpoints
     ├── fig_result/: plot AUC graph
