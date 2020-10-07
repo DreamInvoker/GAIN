@@ -1,7 +1,7 @@
+For latest update, please move to this [repo](https://github.com/DreamInvoker/GAIN).
+
 # GAIN
 PyTorch implementation for EMNLP 2020 paper: [Double Graph Based Reasoning for Document-level Relation Extraction]()
-
-Please move to this [repo](https://github.com/DreamInvoker/GAIN).
 
 ## 1. Environments
 
