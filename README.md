@@ -66,18 +66,18 @@ Following the hint in this [link](http://viewsetting.xyz/2019/10/17/pytorch_tran
 
 ## 4. Training
 
-```shell script
-cd code
-./runXXX.sh gpu_id   # like ./run_GAIN_BERT.sh 2
-tail -f -n 2000 logs/train_xxx.log
+```bash
+>> cd code
+>> ./runXXX.sh gpu_id   # like ./run_GAIN_BERT.sh 2
+>> tail -f -n 2000 logs/train_xxx.log
 ```
 
 ## 5. Evaluation
 
-```shell script
-cd code
-./evalXXX.sh gpu_id threshold(optional)  # like ./eval_GAIN_BERT.sh 0 0.5521
-tail -f -n 2000 logs/test_xxx.log
+```bash
+>> cd code
+>> ./evalXXX.sh gpu_id threshold(optional)  # like ./eval_GAIN_BERT.sh 0 0.5521
+>> tail -f -n 2000 logs/test_xxx.log
 ```
 
 PS: we recommend to use threshold = -1 (which is the default, you can omit this arguments at this time) for dev set, 
@@ -98,7 +98,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you use this work or code, please kindly cite the following paper:
 
-```
+```bib
 @inproceedings{zeng-EMNLP-2020-GAIN,
  author = {Shuang, Zeng and Runxin, Xu and Baobao, Chang and Lei, Li},
  booktitle = {Proc. of EMNLP},
