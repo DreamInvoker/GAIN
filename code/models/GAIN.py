@@ -61,6 +61,18 @@ class GAIN_GloVe(nn.Module):
         self.attention = Attention(self.bank_size * 2, self.gcn_dim * 4)
 
     def forward(self, **params):
+        '''
+            words: [batch_size, max_length]
+            src_lengths: [batchs_size]
+            mask: [batch_size, max_length]
+            entity_type: [batch_size, max_length]
+            entity_id: [batch_size, max_length]
+            mention_id: [batch_size, max_length]
+            distance: [batch_size, max_length]
+            entity2mention_table: list of [local_entity_num, local_mention_num]
+            graphs: list of DGLHeteroGraph
+            h_t_pairs: [batch_size, h_t_limit, 2]
+        '''
         src = self.word_emb(params['words'])
         mask = params['mask']
         bsz, slen, _ = src.size()
