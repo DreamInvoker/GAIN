@@ -61,18 +61,6 @@ class GAIN_GloVe(nn.Module):
         self.attention = Attention(self.bank_size * 2, self.gcn_dim * 4)
 
     def forward(self, **params):
-        '''
-        words: [batch_size, max_length]
-        src_lengths: [batchs_size]
-        mask: [batch_size, max_length]  0表示这个位置不存在
-        entity_type: [batch_size, max_length] 注意type/id/distance这些传进来的时候，不存在的位置一定要pad为0
-        entity_id: [batch_size, max_length]
-        mention_id: [batch_size, max_length]
-        distance: [batch_size, max_length]
-        entity2mention_table: list of [local_entity_num, local_mention_num]
-        graphs: list of DGLHeteroGraph
-        h_t_pairs: [batch_size, h_t_limit, 2] 注意跟entity_id保持一致，从1开始 0是padding，不能超过entity_num
-        '''
         src = self.word_emb(params['words'])
         mask = params['mask']
         bsz, slen, _ = src.size()
