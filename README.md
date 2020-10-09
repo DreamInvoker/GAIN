@@ -13,7 +13,7 @@ PyTorch implementation for EMNLP 2020 paper: [Double Graph Based Reasoning for D
 GAIN/
 ├─ code/
     ├── checkpoint/: save model checkpoints
-    ├── fig_result/: plot AUC graph
+    ├── fig_result/: plot AUC curves
     ├── logs/: save training / evaluation logs
     ├── models/:
         ├── GAIN.py: GAIN model for GloVe or BERT version
