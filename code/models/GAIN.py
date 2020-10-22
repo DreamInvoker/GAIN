@@ -679,7 +679,7 @@ class Bert():
         token_ids = self.tokenizer.convert_tokens_to_ids(tokens)
         ids = torch.tensor([token_ids])
         # assert ids.size(1) < self.max_len
-        ids = ids[:, self.max_len]  # https://github.com/DreamInvoker/GAIN/issues/4
+        ids = ids[:, :self.max_len]  # https://github.com/DreamInvoker/GAIN/issues/4
         if pad:
             padded_ids = torch.zeros(1, self.max_len).to(ids)
             padded_ids[0, :ids.size(1)] = ids
