@@ -55,7 +55,7 @@ PS: dgl >= 0.5 is not compatible with our code, we will fix this compatibility p
 ## 3. Preparation
 
 ### 3.1. Dataset
-- Download data from [Google Drive link](https://drive.google.com/drive/folders/1Ri3LIILKKBi3aBJjUVCOBpGX5PpONHRK) shared by DocRED authors
+- Download data from [Google Drive link](https://drive.google.com/drive/folders/1c5-0YwnoJx8NS6CV2f-NoTHR__BdkNqw) shared by DocRED authors
 
 - Put `train_annotated.json`, `dev.json`, `test.json`, `word2id.json`, `ner2id.json`, `rel2id.json`, `vec.npy` into the directory `data/`
 
